@@ -11,7 +11,6 @@ buildscript {
   dependencies {
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     classpath "org.wisepersist:gwt-gradle-plugin:$gwtPluginVersion"
-
   }
 }
 
@@ -42,6 +41,17 @@ subprojects {
     maven { url 'https://s01.oss.sonatype.org/content/repositories/snapshots/' }
     maven { url 'https://jitpack.io' }
   }
+
+  dependencies {
+    implementation "io.github.libktx:ktx-app:$ktxVersion"
+    implementation "io.github.libktx:ktx-graphics:$ktxVersion"
+    implementation "io.github.libktx:ktx-collections:$ktxVersion"
+    implementation "io.github.libktx:ktx-math:$ktxVersion"
+    implementation "io.github.libktx:ktx-box2d:$ktxVersion"
+    implementation "io.github.libktx:ktx-scene2d:$ktxVersion"
+    implementation "io.github.libktx:ktx-actors:$ktxVersion"
+  }
 }
+
 
 eclipse.project.name = 'sail-race' + '-parent'

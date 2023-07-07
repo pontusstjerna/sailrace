@@ -1,8 +1,8 @@
 package se.nocroft.lwjgl3
 
+import SailRace
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration
-import se.nocroft.SailRace
 
     val config = Lwjgl3ApplicationConfiguration().also {
         it.setTitle("SailRace")

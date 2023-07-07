@@ -7,7 +7,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 /** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
-public class SailRace extends ApplicationAdapter {
+public class SailRaceJava extends ApplicationAdapter {
     private SpriteBatch batch;
     private Texture image;
 
