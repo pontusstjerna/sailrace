@@ -1,11 +1,9 @@
 package model
 
-class Wind {
-    var deg: Float = 0f
-    private set
+import com.badlogic.gdx.math.Vector2
 
-    var knots: Float = 10f
-    private set
+class Wind {
+    val force = Vector2(100f, 100f)
 
     fun update() {
         // TODO

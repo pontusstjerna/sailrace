@@ -9,9 +9,11 @@ class GameScreen : KtxScreen {
     private var accumulator: Float = 0.0f
     private val world = World(1)
 
-    private val renderer = Renderer()
+    private val renderer = Renderer(world.physicsWorld)
     override fun render(delta: Float) {
         renderer.render(world.boats, delta)
+
+        updatePhysics(delta)
     }
 
     private fun updatePhysics(delta: Float) {

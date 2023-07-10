@@ -50,6 +50,7 @@ subprojects {
     implementation "io.github.libktx:ktx-box2d:$ktxVersion"
     implementation "io.github.libktx:ktx-scene2d:$ktxVersion"
     implementation "io.github.libktx:ktx-actors:$ktxVersion"
+    implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
   }
 }
 
